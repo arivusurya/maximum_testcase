@@ -23,13 +23,23 @@ namespace TestMaximum
         }
 
 
+
     }
-    public class max<T> : testCases5<T> where T : IComparable
+    public class maxy<T> : testCases<T> where T : IComparable
     {
-        public T maxex(T a, T b, T c)
+        public T max(T a, T b, T c)
         {
-            return maxi(a, b, c);
+            T mx = maxi(a, b, c);
+
+            toPrint(mx);
+            return mx;
         }
+        public T toPrint(T mx)
+        {
+            System.Console.WriteLine(mx);
+            return mx;
+        }
+
     }
 
 }
