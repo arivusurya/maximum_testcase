@@ -8,14 +8,13 @@ namespace TestMaximum
         public static void Main(String[] args)
         {
 
-            TestCases<float> test = new TestCases<float>();
+            testCases<string> test = new testCases<string>();
             Console.WriteLine("Test Case(1) ");
-            Console.WriteLine(test.maxf(5.5F, 4.4F, 3.73F));
+            Console.WriteLine(test.maxi("Peach", "Apple", "Banana"));
             Console.WriteLine("Test Case(2) ");
-            Console.WriteLine(test.maxf(55.8F, 89.76F, 73.66F));
+            Console.WriteLine(test.maxi("icon", "volume", "shape"));
             Console.WriteLine("Test Case(3) ");
-            Console.WriteLine(test.maxf(101.56F, 447.01F, 833.09F));
-
+            Console.WriteLine(test.maxi("docter", "lawyer", "sofware.E"));
 
 
         }
